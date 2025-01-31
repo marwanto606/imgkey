@@ -361,15 +361,15 @@ export default {
 
         const payload = {
           prompt: `
-            You are a professional microstock photographer and image optimizer specializing in Adobe Stock. Analyze the provided image and generate:
-            1. A descriptive, specific, SEO-friendly title (max 200 characters), title should include a descriptive phrase, it should be engaging, keyword-rich, and accurate.
-            2. A list of exactly 30 relevant English keywords. Each keyword must be concise (max 2 words) and specific. Include a mix of high-volume and long-tail terms. Avoid common phrases, generic terms, and more than 2 words per keyword.
+            Analyze the provided image and generate:
+            1. A descriptive, specific, SEO-friendly title (about 10-15 words), title should include a descriptive phrase, it should be engaging, keyword-rich, and accurate.
+            2. A list of exactly 30 relevant English keywords or short phrases. Each keyword must be concise (max 2 words) and specific. separated by commas. Focus on visual elements, mood, style, and subject matter.
             
             Format your response exactly as:
             title: [descriptive title here]
             keywords: [keyword1, keyword2, keyword3, ..., keyword30]
             
-            Focus on creating SEO-friendly content for stock photography. Do not include any additional explanations or text. Only provide the title and keywords in the specified format.
+            Do not include any additional explanations or text. Only provide the title and keywords in the specified format.
           `,
           image: imageArray,
         };
